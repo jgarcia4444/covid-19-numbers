@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+/* My CSS Additions */
+.container {
+  margin-top: 5%;
+}
+
+body {
+  background-color: #bbb;
+}
+
+#title {
+  padding: 10px 0px 0px 10px;
+}
+
+#nav {
+  background-color: #2962FF;
+}

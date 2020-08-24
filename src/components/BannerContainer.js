@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Banner from './Banner';
 
+
 export default class BannerContainer extends Component {
 
     state = {
@@ -12,15 +13,15 @@ export default class BannerContainer extends Component {
         let hours = date.getHours()
         if (hours < 12) {
             this.setState({
-                timeBasedGreeting: "Good Morning "
+                timeBasedGreeting: "Good Morning"
             })
         } else if (hours < 17) {
             this.setState({
-                timeBasedGreeting: "Good Afternoon "
+                timeBasedGreeting: "Good Afternoon"
             })
         } else {
             this.setState({
-                timeBasedGreeting: "Good Evening "
+                timeBasedGreeting: "Good Evening"
             })
         }
     }
