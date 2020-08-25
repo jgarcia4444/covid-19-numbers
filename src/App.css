@@ -53,8 +53,35 @@ body {
 
 #nav {
   background-color: #1E88E5;
+  color: white;
 }
 
 .columns {
   text-align: center;
+}
+
+#stateSelection {
+  background-color: #1E88E5;
+  color: white;
+}
+
+#api-link {
+  color: #37474F;
+  text-decoration: none;
+}
+
+#api-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#api-link:active {
+  color: #78909C;
+  text-decoration: none;
+}
+
+#footer {
+  width: 100%;
+  background-color: #1E88E5;
+  color: white;
 }
