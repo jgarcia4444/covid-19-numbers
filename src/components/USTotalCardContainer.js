@@ -26,11 +26,31 @@ export default class USTotalCardContainer extends Component {
     }
 
     render() {
+        let lastModified = this.state.countryCurrentResults.lastModified;
+        var lastModifiedArray;
+        var formattedDate;
+        if (lastModified !== undefined) {
+            lastModifiedArray = lastModified.split('T');
+            let dateTime = lastModifiedArray[0];
+            let dateTimeArray = dateTime.split('-')
+            formattedDate = dateTimeArray[1] + '/' + dateTimeArray[2] + '/' + dateTimeArray[0];
+        }
+
         return (
-            <div className="container">
-                <h2>
-                    US Total Numbers 
-                </h2>
+            <div className="container number-container">
+                <div className="row">
+                    <div className="six columns">
+                       <h2>
+                            US Total Numbers 
+                        </h2> 
+                    </div>
+                    <div className="six columns">
+                        <h4>
+                            Last Updated: {formattedDate ? formattedDate : "Loading..." }
+                        </h4>
+                    </div>
+                </div>
+                
                 <USTotalCard results={this.state}/>
             </div>
         )

@@ -45,12 +45,16 @@ export default class StateCardContainer extends Component {
     render() {
         const states = ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY'];
         return (
-            <div className="container">
-                <h2>{this.state.selectedState.toUpperCase()} Total Numbers</h2>
+            <div className="container number-container">
                 <div className="row">
-                    <div className="three columns">
+                    <div className="twelve columns">
+                        <h2>{this.state.selectedState.toUpperCase()} Total Numbers</h2>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="twelve columns">
                        <label htmlFor="stateSelection">Select a State</label> 
-                       <select onChange={e => this.handleOptionChange(e)} className="u-full-width" id="stateSelection">
+                       <select onChange={e => this.handleOptionChange(e)} id="stateSelection">
                             {states.map(stateCode => <option  key={stateCode} value={stateCode.toLowerCase()}>{stateCode}</option>)}
                        </select>
                     </div>
