@@ -38,7 +38,6 @@
 }
 /* My CSS Additions */
 .container {
-  margin-top: 5%;
   padding: 2%;
 }
 
@@ -90,7 +89,7 @@ body {
   width: 100%;
   background-color: #1E88E5;
   color: white;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .number-container {
@@ -101,9 +100,21 @@ body {
 }
 
 #footer .columns {
-  margin: 0 auto;
+  margin: 2% auto 0 auto;
 }
 
 .banner {
-  margin: 5% 0;
+  margin: 10% auto 0 auto;
+}
+
+.contact-form p {
+  text-align: left;
+}
+
+#state-title, #us-title {
+  margin: 7% auto 0 auto;
+}
+
+#contact-form {
+  padding: 0;
 }

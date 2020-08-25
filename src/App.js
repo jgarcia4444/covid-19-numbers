@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import USTotalCardContainer from './components/USTotalCardContainer';
 import StateCardContainer from './components/StateCardContainer';
 import Footer from './components/Footer';
+import ContactMe from './components/ContactMe';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <BannerContainer />
       <USTotalCardContainer />
       <StateCardContainer />
+      <ContactMe />
       <Footer />
     </div>
   );

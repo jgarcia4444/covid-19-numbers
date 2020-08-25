@@ -37,22 +37,26 @@ export default class USTotalCardContainer extends Component {
         }
 
         return (
-            <div className="container number-container">
+            <div>
                 <div className="row">
-                    <div className="six columns">
-                       <h2>
+                    <div id="us-title" className="twelve columns">
+                        <h2>
                             US Total Numbers 
                         </h2> 
                     </div>
-                    <div className="six columns">
-                        <h4>
-                            Last Updated: {formattedDate ? formattedDate : "Loading..." }
-                        </h4>
-                    </div>
                 </div>
-                
-                <USTotalCard results={this.state}/>
+                <div className="container number-container">
+                    <div className="row">
+                        <div className="twelve columns">
+                            <h5>
+                                Last Updated: {formattedDate ? formattedDate : "Loading..." }
+                            </h5>
+                        </div>
+                    </div>
+                    <USTotalCard results={this.state}/>
+                </div>
             </div>
+            
         )
     }
 
