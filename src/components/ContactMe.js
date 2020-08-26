@@ -15,20 +15,20 @@ const ContactMe = (props) => {
                     
                     <div className="six columns">
                         <label htmlFor="user_name">Name</label>
-                        <input className="u-full-width"  id="user_name" type="text" name="user_name" />
+                        <input required className="u-full-width"  id="user_name" type="text" name="user_name" />
                     </div>
                     <div className="six columns">
                         <label htmlFor="user_email">Email</label>
-                        <input id="user_email" className="u-full-width"  type="email" name="user_email" />
+                        <input required id="user_email" className="u-full-width"  type="email" name="user_email" />
                     </div>
                 </div>
                 <div className="row">
                     <div className="twelve columns">
                         <label htmlFor="message">Message</label>
-                        <textarea id="message" className="u-full-width" name="message"></textarea>
+                        <textarea required id="message" className="u-full-width" name="message"></textarea>
                     </div>
                     <div className="twelve columns">
-                        <input className="button-primary" type="submit" value="Send" />    
+                        <button className="button-primary" type="submit">Send</button>    
                     </div>
                 </div>
             </form>
